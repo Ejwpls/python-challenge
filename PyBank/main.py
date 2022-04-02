@@ -7,16 +7,6 @@ from numpy import average, double
 #csv pathcd
 _csv =  os.path.join('Resources','budget_data.csv')
 
-#Define the function and have the data as the input 
-def print_financial_status(f_data):
-    date_ = f_data[0]
-    profit_ = double(f_data[1])
-
-    #total number number of month
-    total_month = len(f_data)
-
-    #Sum of Profit
-
 #Read CSV with CSV module
 with open(_csv) as csvfile:
     #Specify delimiter
